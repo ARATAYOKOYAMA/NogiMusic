@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF1BA13420838C4A00C222AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1BA13320838C4A00C222AA /* AppDelegate.swift */; };
+		DF1BA13620838C4A00C222AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1BA13520838C4A00C222AA /* ViewController.swift */; };
+		DF1BA13920838C4A00C222AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF1BA13720838C4A00C222AA /* Main.storyboard */; };
+		DF1BA13B20838C4A00C222AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF1BA13A20838C4A00C222AA /* Assets.xcassets */; };
+		DF1BA13E20838C4A00C222AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF1BA13C20838C4A00C222AA /* LaunchScreen.storyboard */; };
+		DF1BA14920838C4A00C222AA /* NogiMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1BA14820838C4A00C222AA /* NogiMusicTests.swift */; };
+		DF1BA15420838C4A00C222AA /* NogiMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1BA15320838C4A00C222AA /* NogiMusicUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF1BA14520838C4A00C222AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF1BA12820838C4A00C222AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF1BA12F20838C4A00C222AA;
+			remoteInfo = NogiMusic;
+		};
+		DF1BA15020838C4A00C222AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF1BA12820838C4A00C222AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF1BA12F20838C4A00C222AA;
+			remoteInfo = NogiMusic;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DF1BA13020838C4A00C222AA /* NogiMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NogiMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF1BA13320838C4A00C222AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DF1BA13520838C4A00C222AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF1BA13820838C4A00C222AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DF1BA13A20838C4A00C222AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF1BA13D20838C4A00C222AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DF1BA13F20838C4A00C222AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF1BA14420838C4A00C222AA /* NogiMusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NogiMusicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF1BA14820838C4A00C222AA /* NogiMusicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NogiMusicTests.swift; sourceTree = "<group>"; };
+		DF1BA14A20838C4A00C222AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF1BA14F20838C4A00C222AA /* NogiMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NogiMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF1BA15320838C4A00C222AA /* NogiMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NogiMusicUITests.swift; sourceTree = "<group>"; };
+		DF1BA15520838C4A00C222AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF1BA12D20838C4A00C222AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF1BA14120838C4A00C222AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF1BA14C20838C4A00C222AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF1BA12720838C4A00C222AA = {
+			isa = PBXGroup;
+			children = (
+				DF1BA13220838C4A00C222AA /* NogiMusic */,
+				DF1BA14720838C4A00C222AA /* NogiMusicTests */,
+				DF1BA15220838C4A00C222AA /* NogiMusicUITests */,
+				DF1BA13120838C4A00C222AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF1BA13120838C4A00C222AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF1BA13020838C4A00C222AA /* NogiMusic.app */,
+				DF1BA14420838C4A00C222AA /* NogiMusicTests.xctest */,
+				DF1BA14F20838C4A00C222AA /* NogiMusicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF1BA13220838C4A00C222AA /* NogiMusic */ = {
+			isa = PBXGroup;
+			children = (
+				DF1BA13320838C4A00C222AA /* AppDelegate.swift */,
+				DF1BA13520838C4A00C222AA /* ViewController.swift */,
+				DF1BA13720838C4A00C222AA /* Main.storyboard */,
+				DF1BA13A20838C4A00C222AA /* Assets.xcassets */,
+				DF1BA13C20838C4A00C222AA /* LaunchScreen.storyboard */,
+				DF1BA13F20838C4A00C222AA /* Info.plist */,
+			);
+			path = NogiMusic;
+			sourceTree = "<group>";
+		};
+		DF1BA14720838C4A00C222AA /* NogiMusicTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF1BA14820838C4A00C222AA /* NogiMusicTests.swift */,
+				DF1BA14A20838C4A00C222AA /* Info.plist */,
+			);
+			path = NogiMusicTests;
+			sourceTree = "<group>";
+		};
+		DF1BA15220838C4A00C222AA /* NogiMusicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DF1BA15320838C4A00C222AA /* NogiMusicUITests.swift */,
+				DF1BA15520838C4A00C222AA /* Info.plist */,
+			);
+			path = NogiMusicUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF1BA12F20838C4A00C222AA /* NogiMusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF1BA15820838C4A00C222AA /* Build configuration list for PBXNativeTarget "NogiMusic" */;
+			buildPhases = (
+				DF1BA12C20838C4A00C222AA /* Sources */,
+				DF1BA12D20838C4A00C222AA /* Frameworks */,
+				DF1BA12E20838C4A00C222AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NogiMusic;
+			productName = NogiMusic;
+			productReference = DF1BA13020838C4A00C222AA /* NogiMusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF1BA14320838C4A00C222AA /* NogiMusicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF1BA15B20838C4A00C222AA /* Build configuration list for PBXNativeTarget "NogiMusicTests" */;
+			buildPhases = (
+				DF1BA14020838C4A00C222AA /* Sources */,
+				DF1BA14120838C4A00C222AA /* Frameworks */,
+				DF1BA14220838C4A00C222AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF1BA14620838C4A00C222AA /* PBXTargetDependency */,
+			);
+			name = NogiMusicTests;
+			productName = NogiMusicTests;
+			productReference = DF1BA14420838C4A00C222AA /* NogiMusicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DF1BA14E20838C4A00C222AA /* NogiMusicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF1BA15E20838C4A00C222AA /* Build configuration list for PBXNativeTarget "NogiMusicUITests" */;
+			buildPhases = (
+				DF1BA14B20838C4A00C222AA /* Sources */,
+				DF1BA14C20838C4A00C222AA /* Frameworks */,
+				DF1BA14D20838C4A00C222AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF1BA15120838C4A00C222AA /* PBXTargetDependency */,
+			);
+			name = NogiMusicUITests;
+			productName = NogiMusicUITests;
+			productReference = DF1BA14F20838C4A00C222AA /* NogiMusicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF1BA12820838C4A00C222AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "横山　新";
+				TargetAttributes = {
+					DF1BA12F20838C4A00C222AA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					DF1BA14320838C4A00C222AA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DF1BA12F20838C4A00C222AA;
+					};
+					DF1BA14E20838C4A00C222AA = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DF1BA12F20838C4A00C222AA;
+					};
+				};
+			};
+			buildConfigurationList = DF1BA12B20838C4A00C222AA /* Build configuration list for PBXProject "NogiMusic" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF1BA12720838C4A00C222AA;
+			productRefGroup = DF1BA13120838C4A00C222AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF1BA12F20838C4A00C222AA /* NogiMusic */,
+				DF1BA14320838C4A00C222AA /* NogiMusicTests */,
+				DF1BA14E20838C4A00C222AA /* NogiMusicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF1BA12E20838C4A00C222AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF1BA13E20838C4A00C222AA /* LaunchScreen.storyboard in Resources */,
+				DF1BA13B20838C4A00C222AA /* Assets.xcassets in Resources */,
+				DF1BA13920838C4A00C222AA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF1BA14220838C4A00C222AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF1BA14D20838C4A00C222AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF1BA12C20838C4A00C222AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF1BA13620838C4A00C222AA /* ViewController.swift in Sources */,
+				DF1BA13420838C4A00C222AA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF1BA14020838C4A00C222AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF1BA14920838C4A00C222AA /* NogiMusicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF1BA14B20838C4A00C222AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF1BA15420838C4A00C222AA /* NogiMusicUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF1BA14620838C4A00C222AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF1BA12F20838C4A00C222AA /* NogiMusic */;
+			targetProxy = DF1BA14520838C4A00C222AA /* PBXContainerItemProxy */;
+		};
+		DF1BA15120838C4A00C222AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF1BA12F20838C4A00C222AA /* NogiMusic */;
+			targetProxy = DF1BA15020838C4A00C222AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DF1BA13720838C4A00C222AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF1BA13820838C4A00C222AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DF1BA13C20838C4A00C222AA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DF1BA13D20838C4A00C222AA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DF1BA15620838C4A00C222AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DF1BA15720838C4A00C222AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF1BA15920838C4A00C222AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 634QW7RT8Y;
+				INFOPLIST_FILE = NogiMusic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ARATA-YOKOYAMA.NogiMusic";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF1BA15A20838C4A00C222AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 634QW7RT8Y;
+				INFOPLIST_FILE = NogiMusic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ARATA-YOKOYAMA.NogiMusic";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DF1BA15C20838C4A00C222AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 634QW7RT8Y;
+				INFOPLIST_FILE = NogiMusicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ARATA-YOKOYAMA.NogiMusicTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NogiMusic.app/NogiMusic";
+			};
+			name = Debug;
+		};
+		DF1BA15D20838C4A00C222AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 634QW7RT8Y;
+				INFOPLIST_FILE = NogiMusicTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ARATA-YOKOYAMA.NogiMusicTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NogiMusic.app/NogiMusic";
+			};
+			name = Release;
+		};
+		DF1BA15F20838C4A00C222AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 634QW7RT8Y;
+				INFOPLIST_FILE = NogiMusicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ARATA-YOKOYAMA.NogiMusicUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NogiMusic;
+			};
+			name = Debug;
+		};
+		DF1BA16020838C4A00C222AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 634QW7RT8Y;
+				INFOPLIST_FILE = NogiMusicUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "ARATA-YOKOYAMA.NogiMusicUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NogiMusic;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF1BA12B20838C4A00C222AA /* Build configuration list for PBXProject "NogiMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF1BA15620838C4A00C222AA /* Debug */,
+				DF1BA15720838C4A00C222AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF1BA15820838C4A00C222AA /* Build configuration list for PBXNativeTarget "NogiMusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF1BA15920838C4A00C222AA /* Debug */,
+				DF1BA15A20838C4A00C222AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF1BA15B20838C4A00C222AA /* Build configuration list for PBXNativeTarget "NogiMusicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF1BA15C20838C4A00C222AA /* Debug */,
+				DF1BA15D20838C4A00C222AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF1BA15E20838C4A00C222AA /* Build configuration list for PBXNativeTarget "NogiMusicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF1BA15F20838C4A00C222AA /* Debug */,
+				DF1BA16020838C4A00C222AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF1BA12820838C4A00C222AA /* Project object */;
+}
