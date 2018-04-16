@@ -15,14 +15,26 @@ struct ResultMemberData {
     var memberID = [String]()
 }
 
+struct ResultTrackData {
+    var songNames = [String]()
+}
+
 class Firebase {
+    
+    var memberiD: String
+    
+    let ref = Database.database().reference()
+    
+    init(nameiD:String) {
+        self.memberiD = nameiD
+    }
+    
     /*
      FirebaseのDB参照
      */
     
     func loadMemberList(_ after:@escaping (ResultMemberData) -> ()){
         
-        let ref = Database.database().reference()
         var names = [String]()
         var ids = [String]()
         
@@ -46,5 +58,31 @@ class Firebase {
                 print(names)
             }
         })
+    }
+    
+    func loadSongList(_ after:@escaping (ResultTrackData) -> ()){
+        
+        var tempSongNames : [String] = []
+        
+        ref.child(memberiD).observeSingleEvent(of: .value, with: { (snapshot) in
+            
+            if ( snapshot.value is NSNull ) {
+                
+                // DATA WAS NOT FOUND
+                print("– – – Fire Base Data was not found – – –")
+                
+            } else {
+                for folder in (snapshot.children) {
+                    let member_snap = folder as! DataSnapshot
+                    let dict = member_snap.value as! [String: Any?]
+                    tempSongNames.append(dict["Title"] as! String)
+                }
+                
+                let resultData = ResultTrackData(songNames : tempSongNames)
+                after(resultData)
+            }
+            
+        })
+        
     }
 }

@@ -85,7 +85,7 @@ extension MemberListViewController {
      */
     
     func loadMemberList(){
-        let memberListObject = Firebase()
+        let memberListObject = Firebase(nameiD: "")
         
         let dispatchGroup = DispatchGroup()
         // 直列キュー / attibutes指定なし
