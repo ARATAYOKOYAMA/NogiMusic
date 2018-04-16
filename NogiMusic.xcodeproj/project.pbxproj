@@ -20,6 +20,9 @@
 		DF1BA165208391C400C222AA /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1BA164208391C400C222AA /* CollectionViewCell.swift */; };
 		DF1BA167208392A200C222AA /* MemberDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1BA166208392A200C222AA /* MemberDetailViewController.swift */; };
 		DF1BA16920839B9800C222AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF1BA16820839B9800C222AA /* GoogleService-Info.plist */; };
+		DFD7B7CE2084CB440039FCBC /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7B7CD2084CB440039FCBC /* Firebase.swift */; };
+		DFD7B7D12084E3530039FCBC /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7B7CF2084E3530039FCBC /* MusicTableViewCell.swift */; };
+		DFD7B7D22084E3530039FCBC /* MusicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD7B7D02084E3530039FCBC /* MusicTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,9 @@
 		DF1BA164208391C400C222AA /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		DF1BA166208392A200C222AA /* MemberDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberDetailViewController.swift; sourceTree = "<group>"; };
 		DF1BA16820839B9800C222AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DFD7B7CD2084CB440039FCBC /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
+		DFD7B7CF2084E3530039FCBC /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		DFD7B7D02084E3530039FCBC /* MusicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicTableViewCell.xib; sourceTree = "<group>"; };
 		F5ACE35265EA4676D5F8D33B /* Pods_NogiMusicTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NogiMusicTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC969A3D1720DB88B25E6F40 /* Pods-NogiMusicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NogiMusicTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NogiMusicTests/Pods-NogiMusicTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -186,6 +192,7 @@
 		DF1BA1622083914B00C222AA /* model */ = {
 			isa = PBXGroup;
 			children = (
+				DFD7B7CD2084CB440039FCBC /* Firebase.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -194,6 +201,8 @@
 			isa = PBXGroup;
 			children = (
 				DF1BA164208391C400C222AA /* CollectionViewCell.swift */,
+				DFD7B7CF2084E3530039FCBC /* MusicTableViewCell.swift */,
+				DFD7B7D02084E3530039FCBC /* MusicTableViewCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -318,6 +327,7 @@
 				DF1BA16920839B9800C222AA /* GoogleService-Info.plist in Resources */,
 				DF1BA13B20838C4A00C222AA /* Assets.xcassets in Resources */,
 				DF1BA13920838C4A00C222AA /* Main.storyboard in Resources */,
+				DFD7B7D22084E3530039FCBC /* MusicTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,10 +490,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFD7B7CE2084CB440039FCBC /* Firebase.swift in Sources */,
 				DF1BA167208392A200C222AA /* MemberDetailViewController.swift in Sources */,
 				DF1BA13620838C4A00C222AA /* MemberListViewController.swift in Sources */,
 				DF1BA13420838C4A00C222AA /* AppDelegate.swift in Sources */,
 				DF1BA165208391C400C222AA /* CollectionViewCell.swift in Sources */,
+				DFD7B7D12084E3530039FCBC /* MusicTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
