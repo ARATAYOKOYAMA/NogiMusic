@@ -1,0 +1,6 @@
+framework module Pods_NogiMusicTests {
+  umbrella header "Pods-NogiMusicTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
