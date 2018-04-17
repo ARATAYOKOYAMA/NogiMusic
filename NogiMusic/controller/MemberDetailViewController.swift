@@ -96,7 +96,23 @@ extension MemberDetailViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // ハイライト消す
         tableView.deselectRow(at: indexPath, animated: false)
+        // 検索結果へ遷移
+        self.performSegue(withIdentifier: "test", sender: nil)
         print(indexPath)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "test" { //Segueのid
+//            // Detailをインスタンス化
+//            let memberDetailViewController = segue.destination as! MemberDetailViewController
+//            // 値を渡す
+//            memberDetailViewController.senderData = sender as! [String]
+            
+        }else {
+            // どちらでもない遷移
+        }
+        
     }
 }
 

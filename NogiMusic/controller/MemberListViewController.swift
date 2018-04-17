@@ -27,6 +27,10 @@ class MemberListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let startObject = StartFuntion()
+        startObject.musicLibraryPermission()
+        startObject.appleMusicConfim()
+        
         //FiewbaseのDB呼び出し
         loadMemberList()
         

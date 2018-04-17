@@ -116,11 +116,37 @@
                     </view>
                     <connections>
                         <outlet property="trackTableView" destination="6ng-W3-nth" id="ntx-Dg-o2U"/>
+                        <segue destination="MOS-S8-SaH" kind="showDetail" identifier="test" id="khG-bm-ZCt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xvd-Nl-jgl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="888.79999999999995" y="133.5832083958021"/>
+            <point key="canvasLocation" x="919" y="134"/>
+        </scene>
+        <!--Playing View Controller-->
+        <scene sceneID="VkI-x8-EGh">
+            <objects>
+                <viewController id="MOS-S8-SaH" customClass="PlayingViewController" customModule="NogiMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cIc-oI-LcI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tda-VZ-3lh">
+                                <rect key="frame" x="87" y="268" width="201" height="131"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="test:" destination="MOS-S8-SaH" eventType="touchUpInside" id="oqV-dG-LEV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="0bK-2a-IEn"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LgJ-Lj-tG5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1692" y="134"/>
         </scene>
     </scenes>
 </document>

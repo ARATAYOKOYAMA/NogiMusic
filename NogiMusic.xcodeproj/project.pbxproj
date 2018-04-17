@@ -20,6 +20,8 @@
 		DF1BA165208391C400C222AA /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1BA164208391C400C222AA /* CollectionViewCell.swift */; };
 		DF1BA167208392A200C222AA /* MemberDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1BA166208392A200C222AA /* MemberDetailViewController.swift */; };
 		DF1BA16920839B9800C222AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF1BA16820839B9800C222AA /* GoogleService-Info.plist */; };
+		DF36290B2086570100210418 /* StartFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF36290A2086570100210418 /* StartFunction.swift */; };
+		DF36290D20865BE500210418 /* PlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF36290C20865BE500210418 /* PlayingViewController.swift */; };
 		DFD7B7CE2084CB440039FCBC /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7B7CD2084CB440039FCBC /* Firebase.swift */; };
 		DFD7B7D12084E3530039FCBC /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7B7CF2084E3530039FCBC /* MusicTableViewCell.swift */; };
 		DFD7B7D22084E3530039FCBC /* MusicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD7B7D02084E3530039FCBC /* MusicTableViewCell.xib */; };
@@ -66,6 +68,8 @@
 		DF1BA164208391C400C222AA /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		DF1BA166208392A200C222AA /* MemberDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberDetailViewController.swift; sourceTree = "<group>"; };
 		DF1BA16820839B9800C222AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DF36290A2086570100210418 /* StartFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartFunction.swift; sourceTree = "<group>"; };
+		DF36290C20865BE500210418 /* PlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingViewController.swift; sourceTree = "<group>"; };
 		DFD7B7CD2084CB440039FCBC /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
 		DFD7B7CF2084E3530039FCBC /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
 		DFD7B7D02084E3530039FCBC /* MusicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicTableViewCell.xib; sourceTree = "<group>"; };
@@ -185,6 +189,7 @@
 			children = (
 				DF1BA13520838C4A00C222AA /* MemberListViewController.swift */,
 				DF1BA166208392A200C222AA /* MemberDetailViewController.swift */,
+				DF36290C20865BE500210418 /* PlayingViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				DFD7B7CD2084CB440039FCBC /* Firebase.swift */,
+				DF36290A2086570100210418 /* StartFunction.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -494,7 +500,9 @@
 				DF1BA167208392A200C222AA /* MemberDetailViewController.swift in Sources */,
 				DF1BA13620838C4A00C222AA /* MemberListViewController.swift in Sources */,
 				DF1BA13420838C4A00C222AA /* AppDelegate.swift in Sources */,
+				DF36290D20865BE500210418 /* PlayingViewController.swift in Sources */,
 				DF1BA165208391C400C222AA /* CollectionViewCell.swift in Sources */,
+				DF36290B2086570100210418 /* StartFunction.swift in Sources */,
 				DFD7B7D12084E3530039FCBC /* MusicTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
