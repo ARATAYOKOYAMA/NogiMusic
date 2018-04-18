@@ -116,7 +116,7 @@
                     </view>
                     <connections>
                         <outlet property="trackTableView" destination="6ng-W3-nth" id="ntx-Dg-o2U"/>
-                        <segue destination="MOS-S8-SaH" kind="showDetail" identifier="test" id="khG-bm-ZCt"/>
+                        <segue destination="MOS-S8-SaH" kind="showDetail" identifier="toPlay" id="khG-bm-ZCt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xvd-Nl-jgl" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -132,21 +132,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tda-VZ-3lh">
-                                <rect key="frame" x="87" y="268" width="201" height="131"/>
+                                <rect key="frame" x="87" y="499" width="201" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="test:" destination="MOS-S8-SaH" eventType="touchUpInside" id="oqV-dG-LEV"/>
-                                </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4YH-EH-9d4">
+                                <rect key="frame" x="0.0" y="20" width="376" height="376"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="楽曲名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZv-8d-0Ek">
+                                <rect key="frame" x="16" y="429" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="0bK-2a-IEn"/>
                     </view>
+                    <connections>
+                        <outlet property="artwork" destination="4YH-EH-9d4" id="ZvW-Cj-kxW"/>
+                        <outlet property="trackNameField" destination="qZv-8d-0Ek" id="7NQ-VG-9BK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LgJ-Lj-tG5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1692" y="134"/>
+            <point key="canvasLocation" x="1681" y="134"/>
         </scene>
     </scenes>
 </document>

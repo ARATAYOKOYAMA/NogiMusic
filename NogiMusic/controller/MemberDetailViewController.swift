@@ -112,8 +112,8 @@ extension MemberDetailViewController: UITableViewDelegate {
         
         // 音楽再生
          musicPlay(startTrackID: self.songidList[indexPath.row])
-        // 検索結果へ遷移
-        //self.performSegue(withIdentifier: "test", sender: nil)
+        // 再生画面へ遷移
+        self.performSegue(withIdentifier: "toPlay", sender: nil)
     }
     
     /*
@@ -121,11 +121,8 @@ extension MemberDetailViewController: UITableViewDelegate {
      */
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if segue.identifier == "test" { //Segueのid
-//            // Detailをインスタンス化
-//            let memberDetailViewController = segue.destination as! MemberDetailViewController
-//            // 値を渡す
-//            memberDetailViewController.senderData = sender as! [String]
+        if segue.identifier == "toPlay" { //Segueのid
+            // 値を渡す
             
         }else {
             // どちらでもない遷移

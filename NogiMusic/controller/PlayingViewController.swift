@@ -13,40 +13,47 @@ class PlayingViewController: UIViewController {
     
     let musicPlayer = MPMusicPlayerController.systemMusicPlayer
     
-    var songID : [String] = ["1091127927","1047628482"]
+    @IBOutlet weak var artwork: UIImageView!
+    @IBOutlet weak var trackNameField: UILabel!
+    let artworkSize:CGSize = CGSize(width:270, height:270)
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        // 再生中のItemが変わった時に通知を受け取る
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.addObserver(self, selector: #selector(self.nowPlayingItemChanged(notification:)), name: NSNotification.Name.MPMusicPlayerControllerNowPlayingItemDidChange, object: musicPlayer)
+        
+        // 通知の有効化
+        musicPlayer.beginGeneratingPlaybackNotifications()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
     
-    /*
-     音楽再生
-     */
-    func musicPlay(startTrackID : String){
-        let trackIDs = self.songID
-        let descriptor = MPMusicPlayerStoreQueueDescriptor(storeIDs: trackIDs)
-        descriptor.startItemID = startTrackID
-        musicPlayer.setQueue(with: descriptor)
-        musicPlayer.play()
+    override func viewDidLayoutSubviews() {
+        loadTrackData()
+    }
+    
+    /// 再生中の曲が変更になったときに呼ばれる
+    @objc func nowPlayingItemChanged(notification: NSNotification) {
+        loadTrackData()
+    }
+    
+    func loadTrackData() {
+        trackNameField.text = musicPlayer.nowPlayingItem?.title
+        artwork.image = musicPlayer.nowPlayingItem?.artwork?.image(at: artworkSize)
+    }
+    
+    deinit {
+        // 再生中アイテム変更に対する監視をはずす
+        let notificationCenter = NotificationCenter.default
+        notificationCenter.removeObserver(self, name: NSNotification.Name.MPMusicPlayerControllerNowPlayingItemDidChange, object: musicPlayer)
+        // ミュージックプレーヤー通知の無効化
+        musicPlayer.endGeneratingPlaybackNotifications()
     }
 
-    @IBAction func test(_ sender: Any) {
-        
-        musicPlay(startTrackID: "1047628482")
-        
-    }
     
 }
