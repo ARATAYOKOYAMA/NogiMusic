@@ -24,10 +24,13 @@ class MemberListViewController: UIViewController {
     var memberList = [String]()
     var memberID = [String]()
     
+    // 利用可能かどうかをチェックするインスタンス
+    let startObject = StartFuntion()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let startObject = StartFuntion()
+        // 利用可能かどうかのチェック
         startObject.musicLibraryPermission()
         startObject.appleMusicConfim()
         
@@ -137,7 +140,7 @@ extension MemberListViewController {
     }
     
     /*
-     遷移内容をチェックして、値渡しとかする
+     遷移先をチェックして、値渡をする
      */
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         

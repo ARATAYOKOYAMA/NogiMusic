@@ -12,6 +12,9 @@ class StartFuntion {
     
     let cloudServiceController = SKCloudServiceController()
     
+    // AppleMusicが利用可能かどうかのフラグ
+    var canMusicCatalogPlayback = false
+    
     func musicLibraryPermission(){
         SKCloudServiceController.requestAuthorization { status in
             guard status == .authorized else { return }
@@ -24,9 +27,7 @@ class StartFuntion {
     func appleMusicConfim(){
         cloudServiceController.requestCapabilities { capabilities, error in
             guard capabilities.contains(.musicCatalogPlayback) else { return }
-            
-            // 後続の処理 ...
-            //print("hoge2")
+            self.canMusicCatalogPlayback = true
         }
     }
 }

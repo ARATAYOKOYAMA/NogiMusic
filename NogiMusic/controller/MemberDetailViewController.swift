@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MediaPlayer
 
 class MemberDetailViewController: UIViewController {
     
@@ -16,17 +17,26 @@ class MemberDetailViewController: UIViewController {
     var senderData : [String] = []
     
     // Firebaseの値を格納
-    var tempTrackList = [String]()
-    var tempIdList = [String]()
-    var trackList = [String]()
-    var idList = [String]()
+    var tempTrackNameList = [String]()
+    var tempSongIdList = [String]()
+    var trackNameList = [String]()
+    var songidList = [String]()
     
     // インジケータのインスタンス
     let indicator = UIActivityIndicatorView()
     
+    // ミュージックプレイヤー
+     let musicPlayer = MPMusicPlayerController.systemMusicPlayer
+    
+    // 利用可能かどうかをチェックするインスタンス
+    let startObject = StartFuntion()
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(senderData)
+        
+        // 利用可能かどうかのチェック
+        startObject.musicLibraryPermission()
+        startObject.appleMusicConfim()
         
         loadSongList()
         
@@ -54,7 +64,7 @@ extension MemberDetailViewController: UITableViewDataSource {
      データ数
      */
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return trackList.count
+        return trackNameList.count
     }
     
     /*
@@ -65,7 +75,7 @@ extension MemberDetailViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TrackCell", for: indexPath) as! MusicTableViewCell
         
         cell.trackNo?.text = String(indexPath.row + 1)
-        cell.trackName?.text = trackList[indexPath.row]
+        cell.trackName?.text = trackNameList[indexPath.row]
         
         return cell
     }
@@ -96,11 +106,19 @@ extension MemberDetailViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // ハイライト消す
         tableView.deselectRow(at: indexPath, animated: false)
+        
+        // applemusicが利用可能かどうか判定する 利用不可の場合return
+        guard startObject.canMusicCatalogPlayback else { return }
+        
+        // 音楽再生
+         musicPlay(startTrackID: self.songidList[indexPath.row])
         // 検索結果へ遷移
-        self.performSegue(withIdentifier: "test", sender: nil)
-        print(indexPath)
+        //self.performSegue(withIdentifier: "test", sender: nil)
     }
     
+    /*
+     遷移先をチェックして、値渡をする
+     */
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "test" { //Segueのid
@@ -157,7 +175,8 @@ extension MemberDetailViewController{
         dispatchQueue.async(group: dispatchGroup) {
             [weak self] in
             memberListObject.loadSongList({ (str:ResultTrackData?) -> () in
-                self?.tempTrackList = (str?.songNames)!
+                self?.tempTrackNameList = (str?.songNames)!
+                self?.tempSongIdList = (str?.songIds)!
                 dispatchGroup.leave()
             })
         }
@@ -165,8 +184,20 @@ extension MemberDetailViewController{
         // 全ての非同期処理完了後にメインスレッドで処理
         dispatchGroup.notify(queue: .main) {
             self.indicator.stopAnimating()
-            self.trackList = self.tempTrackList
+            self.trackNameList = self.tempTrackNameList
+            self.songidList = self.tempSongIdList
             self.trackTableView.reloadData()
         }
+    }
+    
+    /*
+     音楽再生
+     */
+    func musicPlay(startTrackID : String){
+        let trackIDs = self.songidList
+        let descriptor = MPMusicPlayerStoreQueueDescriptor(storeIDs: trackIDs)
+        descriptor.startItemID = startTrackID
+        musicPlayer.setQueue(with: descriptor)
+        musicPlayer.play()
     }
 }

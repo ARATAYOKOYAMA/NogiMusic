@@ -17,6 +17,7 @@ struct ResultMemberData {
 
 struct ResultTrackData {
     var songNames = [String]()
+    var songIds = [String]()
 }
 
 class Firebase {
@@ -63,6 +64,7 @@ class Firebase {
     func loadSongList(_ after:@escaping (ResultTrackData) -> ()){
         
         var tempSongNames : [String] = []
+        var tempSongIds : [String] = []
         
         ref.child(memberiD).observeSingleEvent(of: .value, with: { (snapshot) in
             
@@ -76,9 +78,10 @@ class Firebase {
                     let member_snap = folder as! DataSnapshot
                     let dict = member_snap.value as! [String: Any?]
                     tempSongNames.append(dict["Title"] as! String)
+                    tempSongIds.append(dict["id"] as! String)
                 }
                 
-                let resultData = ResultTrackData(songNames : tempSongNames)
+                let resultData = ResultTrackData(songNames : tempSongNames, songIds : tempSongIds)
                 after(resultData)
             }
             
