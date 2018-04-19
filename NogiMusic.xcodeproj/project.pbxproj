@@ -26,6 +26,8 @@
 		DF4E9DB02088D94A0081C959 /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4E9DAC2088D9490081C959 /* next.png */; };
 		DF4E9DB12088D94A0081C959 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4E9DAD2088D9490081C959 /* play.png */; };
 		DF4E9DB22088D94A0081C959 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4E9DAE2088D9490081C959 /* back.png */; };
+		DF4E9DB8208905420081C959 /* UIColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4E9DB7208905420081C959 /* UIColorHex.swift */; };
+		DF4E9DBA20890C7D0081C959 /* BottomPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4E9DB920890C7D0081C959 /* BottomPlayViewController.swift */; };
 		DFD7B7CE2084CB440039FCBC /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7B7CD2084CB440039FCBC /* Firebase.swift */; };
 		DFD7B7D12084E3530039FCBC /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7B7CF2084E3530039FCBC /* MusicTableViewCell.swift */; };
 		DFD7B7D22084E3530039FCBC /* MusicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD7B7D02084E3530039FCBC /* MusicTableViewCell.xib */; };
@@ -78,6 +80,8 @@
 		DF4E9DAC2088D9490081C959 /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next.png; sourceTree = "<group>"; };
 		DF4E9DAD2088D9490081C959 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
 		DF4E9DAE2088D9490081C959 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		DF4E9DB7208905420081C959 /* UIColorHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHex.swift; sourceTree = "<group>"; };
+		DF4E9DB920890C7D0081C959 /* BottomPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPlayViewController.swift; sourceTree = "<group>"; };
 		DFD7B7CD2084CB440039FCBC /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
 		DFD7B7CF2084E3530039FCBC /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
 		DFD7B7D02084E3530039FCBC /* MusicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicTableViewCell.xib; sourceTree = "<group>"; };
@@ -199,6 +203,7 @@
 				DF1BA13520838C4A00C222AA /* MemberListViewController.swift */,
 				DF1BA166208392A200C222AA /* MemberDetailViewController.swift */,
 				DF36290C20865BE500210418 /* PlayingViewController.swift */,
+				DF4E9DB920890C7D0081C959 /* BottomPlayViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -208,6 +213,7 @@
 			children = (
 				DFD7B7CD2084CB440039FCBC /* Firebase.swift */,
 				DF36290A2086570100210418 /* StartFunction.swift */,
+				DF4E9DB7208905420081C959 /* UIColorHex.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -528,6 +534,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF4E9DB8208905420081C959 /* UIColorHex.swift in Sources */,
 				DFD7B7CE2084CB440039FCBC /* Firebase.swift in Sources */,
 				DF1BA167208392A200C222AA /* MemberDetailViewController.swift in Sources */,
 				DF1BA13620838C4A00C222AA /* MemberListViewController.swift in Sources */,
@@ -536,6 +543,7 @@
 				DF1BA165208391C400C222AA /* CollectionViewCell.swift in Sources */,
 				DF36290B2086570100210418 /* StartFunction.swift in Sources */,
 				DFD7B7D12084E3530039FCBC /* MusicTableViewCell.swift in Sources */,
+				DF4E9DBA20890C7D0081C959 /* BottomPlayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

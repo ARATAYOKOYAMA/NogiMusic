@@ -34,6 +34,12 @@ class MemberDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // ナビゲーションアイテムの色変更
+        self.navigationController?.navigationBar.barTintColor = UIColor(hex: "932993")
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        // ナビゲーションアイテムの色変更
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        
         // 利用可能かどうかのチェック
         startObject.musicLibraryPermission()
         startObject.appleMusicConfim()
@@ -196,5 +202,10 @@ extension MemberDetailViewController{
         descriptor.startItemID = startTrackID
         musicPlayer.setQueue(with: descriptor)
         musicPlayer.play()
+    }
+    
+    func testChange(){
+        // 再生画面へ遷移
+        self.performSegue(withIdentifier: "toPlay", sender: nil)
     }
 }

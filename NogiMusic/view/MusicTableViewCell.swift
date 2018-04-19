@@ -16,6 +16,7 @@ class MusicTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        trackNo.textColor = UIColor(hex: "932993")
         // Initialization code
     }
 

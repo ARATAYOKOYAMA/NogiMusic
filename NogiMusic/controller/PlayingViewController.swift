@@ -25,9 +25,17 @@ class PlayingViewController: UIViewController {
     let pauseButtonImage:UIImage = UIImage(named: "pause")!
     
     var playFlag = 0
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // ナビゲーションアイテムの色変更
+        self.navigationController?.navigationBar.barTintColor = UIColor(hex: "932993")
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        // ナビゲーションアイテムの色変更
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
 
         // 再生中のItemが変わった時に通知を受け取る
         let notificationCenter = NotificationCenter.default
@@ -35,6 +43,8 @@ class PlayingViewController: UIViewController {
         
         // 通知の有効化
         musicPlayer.beginGeneratingPlaybackNotifications()
+        
+        loadTrackData()
         
         // UIButoonのアスペクトセット
         forAspectFit()
@@ -66,6 +76,11 @@ class PlayingViewController: UIViewController {
         // ミュージックプレーヤー通知の無効化
         musicPlayer.endGeneratingPlaybackNotifications()
     }
+    
+    @IBAction func backTrackList(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     
     // 再生・一時停止ボタン　未完成
     @IBAction func playMusic(_ sender: Any) {

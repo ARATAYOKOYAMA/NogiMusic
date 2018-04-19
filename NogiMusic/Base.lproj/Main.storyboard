@@ -103,7 +103,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6ng-W3-nth">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="527"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -111,6 +111,13 @@
                                     <outlet property="delegate" destination="GEC-fs-aMg" id="zzG-hl-Ugc"/>
                                 </connections>
                             </tableView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LZU-25-nYv">
+                                <rect key="frame" x="0.0" y="591" width="375" height="76"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <connections>
+                                    <segue destination="iIk-u6-PHw" kind="embed" id="eoQ-vD-UeG"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="KGd-FX-4pC"/>
@@ -122,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xvd-Nl-jgl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="919" y="134"/>
+            <point key="canvasLocation" x="917.60000000000002" y="133.5832083958021"/>
         </scene>
         <!--Playing View Controller-->
         <scene sceneID="VkI-x8-EGh">
@@ -132,6 +139,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tda-VZ-3lh">
+                                <rect key="frame" x="162" y="519" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Bhz-Rj-gMM"/>
+                                    <constraint firstAttribute="width" constant="50" id="gYO-Z1-Rx1"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="pause.png"/>
+                                <connections>
+                                    <action selector="playMusic:" destination="MOS-S8-SaH" eventType="touchUpInside" id="bie-ce-ULO"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNd-Et-oNJ">
                                 <rect key="frame" x="78.5" y="519" width="50" height="50"/>
                                 <constraints>
@@ -154,12 +172,6 @@
                                     <action selector="nextMusic:" destination="MOS-S8-SaH" eventType="touchUpInside" id="a75-DL-rFD"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4YH-EH-9d4">
-                                <rect key="frame" x="0.0" y="45" width="375" height="376"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="4YH-EH-9d4" secondAttribute="height" multiplier="375:376" id="s5g-Av-j7W"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="楽曲名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZv-8d-0Ek">
                                 <rect key="frame" x="156.5" y="463" width="62" height="24"/>
                                 <constraints>
@@ -169,22 +181,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tda-VZ-3lh">
-                                <rect key="frame" x="162" y="519" width="50" height="50"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4YH-EH-9d4">
+                                <rect key="frame" x="0.0" y="20" width="375" height="376"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Bhz-Rj-gMM"/>
-                                    <constraint firstAttribute="width" constant="50" id="gYO-Z1-Rx1"/>
+                                    <constraint firstAttribute="width" secondItem="4YH-EH-9d4" secondAttribute="height" multiplier="375:376" id="s5g-Av-j7W"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="pause.png"/>
-                                <connections>
-                                    <action selector="playMusic:" destination="MOS-S8-SaH" eventType="touchUpInside" id="bie-ce-ULO"/>
-                                </connections>
-                            </button>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="qZv-8d-0Ek" firstAttribute="centerX" secondItem="cIc-oI-LcI" secondAttribute="centerX" id="3B8-Yq-93s"/>
-                            <constraint firstItem="4YH-EH-9d4" firstAttribute="top" secondItem="0bK-2a-IEn" secondAttribute="top" constant="25" id="5II-FB-cSJ"/>
+                            <constraint firstItem="4YH-EH-9d4" firstAttribute="top" secondItem="0bK-2a-IEn" secondAttribute="top" id="5II-FB-cSJ"/>
                             <constraint firstItem="tda-VZ-3lh" firstAttribute="top" secondItem="qZv-8d-0Ek" secondAttribute="bottom" constant="32" id="5It-CF-uIw"/>
                             <constraint firstItem="4YH-EH-9d4" firstAttribute="trailing" secondItem="0bK-2a-IEn" secondAttribute="trailing" id="Z1O-fL-ESf"/>
                             <constraint firstItem="tda-VZ-3lh" firstAttribute="centerX" secondItem="cIc-oI-LcI" secondAttribute="centerX" id="Zdu-6d-1Fv"/>
@@ -196,6 +204,9 @@
                             <constraint firstItem="0bK-2a-IEn" firstAttribute="bottom" secondItem="UNd-Et-oNJ" secondAttribute="bottom" constant="98" id="xph-Rc-s9a"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0bK-2a-IEn"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="MTx-cT-Ma9" appends="YES" id="F11-IL-x9s"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="artwork" destination="4YH-EH-9d4" id="ZvW-Cj-kxW"/>
@@ -206,8 +217,51 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LgJ-Lj-tG5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="down" id="MTx-cT-Ma9">
+                    <connections>
+                        <action selector="backTrackList:" destination="MOS-S8-SaH" id="GjG-aM-dKQ"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1680.8" y="133.5832083958021"/>
+        </scene>
+        <!--Bottom Play View Controller-->
+        <scene sceneID="15V-Wh-QgM">
+            <objects>
+                <viewController id="iIk-u6-PHw" customClass="BottomPlayViewController" customModule="NogiMusic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dEx-LM-k3H">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="76"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EmX-Vg-xrO">
+                                <rect key="frame" x="84" y="28" width="275" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bU3-Rd-zsk">
+                                <rect key="frame" x="16" y="8" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6d-Yh-8fX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="testChange:" destination="iIk-u6-PHw" eventType="touchUpInside" id="cAP-Io-Loe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="artwork" destination="bU3-Rd-zsk" id="vOy-Ii-7zT"/>
+                        <outlet property="trackName" destination="EmX-Vg-xrO" id="2BH-G3-aho"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xP4-Ws-zoK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="917.60000000000002" y="649.47526236881561"/>
         </scene>
     </scenes>
     <resources>
