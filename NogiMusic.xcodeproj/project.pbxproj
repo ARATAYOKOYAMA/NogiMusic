@@ -22,6 +22,10 @@
 		DF1BA16920839B9800C222AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF1BA16820839B9800C222AA /* GoogleService-Info.plist */; };
 		DF36290B2086570100210418 /* StartFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF36290A2086570100210418 /* StartFunction.swift */; };
 		DF36290D20865BE500210418 /* PlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF36290C20865BE500210418 /* PlayingViewController.swift */; };
+		DF4E9DAF2088D94A0081C959 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4E9DAB2088D9490081C959 /* pause.png */; };
+		DF4E9DB02088D94A0081C959 /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4E9DAC2088D9490081C959 /* next.png */; };
+		DF4E9DB12088D94A0081C959 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4E9DAD2088D9490081C959 /* play.png */; };
+		DF4E9DB22088D94A0081C959 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4E9DAE2088D9490081C959 /* back.png */; };
 		DFD7B7CE2084CB440039FCBC /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7B7CD2084CB440039FCBC /* Firebase.swift */; };
 		DFD7B7D12084E3530039FCBC /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7B7CF2084E3530039FCBC /* MusicTableViewCell.swift */; };
 		DFD7B7D22084E3530039FCBC /* MusicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD7B7D02084E3530039FCBC /* MusicTableViewCell.xib */; };
@@ -70,6 +74,10 @@
 		DF1BA16820839B9800C222AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DF36290A2086570100210418 /* StartFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartFunction.swift; sourceTree = "<group>"; };
 		DF36290C20865BE500210418 /* PlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingViewController.swift; sourceTree = "<group>"; };
+		DF4E9DAB2088D9490081C959 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		DF4E9DAC2088D9490081C959 /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next.png; sourceTree = "<group>"; };
+		DF4E9DAD2088D9490081C959 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		DF4E9DAE2088D9490081C959 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		DFD7B7CD2084CB440039FCBC /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
 		DFD7B7CF2084E3530039FCBC /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
 		DFD7B7D02084E3530039FCBC /* MusicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicTableViewCell.xib; sourceTree = "<group>"; };
@@ -153,6 +161,7 @@
 		DF1BA13220838C4A00C222AA /* NogiMusic */ = {
 			isa = PBXGroup;
 			children = (
+				DF4E9DA92088D5190081C959 /* images */,
 				DF1BA1632083916500C222AA /* view */,
 				DF1BA1622083914B00C222AA /* model */,
 				DF1BA1612083913200C222AA /* controller */,
@@ -211,6 +220,25 @@
 				DFD7B7D02084E3530039FCBC /* MusicTableViewCell.xib */,
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		DF4E9DA92088D5190081C959 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				DF4E9DAA2088D9490081C959 /* play */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		DF4E9DAA2088D9490081C959 /* play */ = {
+			isa = PBXGroup;
+			children = (
+				DF4E9DAB2088D9490081C959 /* pause.png */,
+				DF4E9DAC2088D9490081C959 /* next.png */,
+				DF4E9DAD2088D9490081C959 /* play.png */,
+				DF4E9DAE2088D9490081C959 /* back.png */,
+			);
+			path = play;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,8 +357,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF4E9DB02088D94A0081C959 /* next.png in Resources */,
+				DF4E9DB12088D94A0081C959 /* play.png in Resources */,
+				DF4E9DB22088D94A0081C959 /* back.png in Resources */,
 				DF1BA13E20838C4A00C222AA /* LaunchScreen.storyboard in Resources */,
 				DF1BA16920839B9800C222AA /* GoogleService-Info.plist in Resources */,
+				DF4E9DAF2088D94A0081C959 /* pause.png in Resources */,
 				DF1BA13B20838C4A00C222AA /* Assets.xcassets in Resources */,
 				DF1BA13920838C4A00C222AA /* Main.storyboard in Resources */,
 				DFD7B7D22084E3530039FCBC /* MusicTableViewCell.xib in Resources */,

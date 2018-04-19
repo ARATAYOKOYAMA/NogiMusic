@@ -16,6 +16,15 @@ class PlayingViewController: UIViewController {
     @IBOutlet weak var artwork: UIImageView!
     @IBOutlet weak var trackNameField: UILabel!
     let artworkSize:CGSize = CGSize(width:270, height:270)
+    
+    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet weak var playButton: UIButton!
+    @IBOutlet weak var backBottun: UIButton!
+    
+    let playButtonImage:UIImage = UIImage(named: "play")!
+    let pauseButtonImage:UIImage = UIImage(named: "pause")!
+    
+    var playFlag = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +35,9 @@ class PlayingViewController: UIViewController {
         
         // 通知の有効化
         musicPlayer.beginGeneratingPlaybackNotifications()
+        
+        // UIButoonのアスペクトセット
+        forAspectFit()
     }
 
     override func didReceiveMemoryWarning() {
@@ -54,6 +66,42 @@ class PlayingViewController: UIViewController {
         // ミュージックプレーヤー通知の無効化
         musicPlayer.endGeneratingPlaybackNotifications()
     }
-
     
+    // 再生・一時停止ボタン　未完成
+    @IBAction func playMusic(_ sender: Any) {
+        switch playFlag {
+        case 0:
+            musicPlayer.pause()
+            playButton.setImage(playButtonImage, for: UIControlState())
+            playFlag = 1
+        default:
+            musicPlayer.play()
+            playButton.setImage(pauseButtonImage, for: UIControlState())
+            playFlag = 0
+        }
+    }
+
+    @IBAction func nextMusic(_ sender: Any) {
+        musicPlayer.skipToNextItem()
+    }
+    
+    @IBAction func previousMusic(_ sender: Any) {
+        musicPlayer.skipToPreviousItem()
+    }
+    
+}
+
+
+extension PlayingViewController {
+    
+    /*
+     UIButtonのアスペクト比を修正
+    */
+    func forAspectFit() {
+        nextButton.imageView?.contentMode = .scaleAspectFit
+        
+        playButton.imageView?.contentMode = .scaleAspectFit
+        
+        backBottun.imageView?.contentMode = .scaleAspectFit
+    }
 }
