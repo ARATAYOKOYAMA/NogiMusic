@@ -29,6 +29,7 @@
 		DF4E9DB8208905420081C959 /* UIColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4E9DB7208905420081C959 /* UIColorHex.swift */; };
 		DF4E9DBA20890C7D0081C959 /* BottomPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4E9DB920890C7D0081C959 /* BottomPlayViewController.swift */; };
 		DF4E9DBC2089D02A0081C959 /* downarrow.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4E9DBB2089D02A0081C959 /* downarrow.png */; };
+		DF55005F208F888B006F2E0A /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF55005E208F888B006F2E0A /* SectionHeader.swift */; };
 		DFD7B7CE2084CB440039FCBC /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7B7CD2084CB440039FCBC /* Firebase.swift */; };
 		DFD7B7D12084E3530039FCBC /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7B7CF2084E3530039FCBC /* MusicTableViewCell.swift */; };
 		DFD7B7D22084E3530039FCBC /* MusicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD7B7D02084E3530039FCBC /* MusicTableViewCell.xib */; };
@@ -84,6 +85,7 @@
 		DF4E9DB7208905420081C959 /* UIColorHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHex.swift; sourceTree = "<group>"; };
 		DF4E9DB920890C7D0081C959 /* BottomPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPlayViewController.swift; sourceTree = "<group>"; };
 		DF4E9DBB2089D02A0081C959 /* downarrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downarrow.png; sourceTree = "<group>"; };
+		DF55005E208F888B006F2E0A /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		DFD7B7CD2084CB440039FCBC /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
 		DFD7B7CF2084E3530039FCBC /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
 		DFD7B7D02084E3530039FCBC /* MusicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicTableViewCell.xib; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 				DF1BA164208391C400C222AA /* CollectionViewCell.swift */,
 				DFD7B7CF2084E3530039FCBC /* MusicTableViewCell.swift */,
 				DFD7B7D02084E3530039FCBC /* MusicTableViewCell.xib */,
+				DF55005E208F888B006F2E0A /* SectionHeader.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -546,6 +549,7 @@
 				DF36290D20865BE500210418 /* PlayingViewController.swift in Sources */,
 				DF1BA165208391C400C222AA /* CollectionViewCell.swift in Sources */,
 				DF36290B2086570100210418 /* StartFunction.swift in Sources */,
+				DF55005F208F888B006F2E0A /* SectionHeader.swift in Sources */,
 				DFD7B7D12084E3530039FCBC /* MusicTableViewCell.swift in Sources */,
 				DF4E9DBA20890C7D0081C959 /* BottomPlayViewController.swift in Sources */,
 			);

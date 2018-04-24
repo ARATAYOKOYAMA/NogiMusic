@@ -48,6 +48,10 @@ class MemberListViewController: UIViewController {
         // ナビゲーションアイテムの色変更
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         
+        // セクションヘッダの高さ
+        guard let fl = MemberCollectionView?.collectionViewLayout as? UICollectionViewFlowLayout else { return }
+        fl.headerReferenceSize = CGSize(width: self.view.bounds.width, height: 30)
+        
         // 利用可能かどうかのチェック
         startObject.musicLibraryPermission()
         startObject.appleMusicConfim()
@@ -72,8 +76,25 @@ extension MemberListViewController: UICollectionViewDataSource {
      cellの数
     */
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return memberList_1.count + memberList_2.count + memberList_3.count + memberList_0.count
-        return memberList_2.count + memberList_3.count + memberList_0.count
+        switch section {
+        case 0:
+            return memberList_1.count
+        case 1:
+            return memberList_2.count
+        case 2:
+            return memberList_3.count
+        case 3:
+            return memberList_0.count
+        default:
+            return 0
+        }
+    }
+    
+    /*
+     セクションの数
+     */
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 4
     }
     
     /*
@@ -82,11 +103,57 @@ extension MemberListViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CollectionViewCell
         
-        cell.color.text = ""
-        cell.name.text = memberList_0[indexPath.item]
+        switch indexPath.section {
+        case 0:
+            cell.color.text = ""
+            cell.name.text = memberList_1[indexPath.item]
+        case 1:
+            cell.color.text = ""
+            cell.name.text = memberList_2[indexPath.item]
+        case 2:
+            cell.color.text = ""
+            cell.name.text = memberList_3[indexPath.item]
+        case 3:
+            cell.color.text = ""
+            cell.name.text = memberList_0[indexPath.item]
+        default:
+            cell.color.text = ""
+            cell.name.text = ""
+        }
         
         return cell
     }
+    
+    /*
+     セクションcellの情報
+     */
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+        guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "SectionHeader", for: indexPath) as? SectionHeader else {
+            fatalError("Could not find proper header")
+        }
+        
+        if kind == UICollectionElementKindSectionHeader {
+            
+            switch indexPath.section {
+            case 0:
+                header.sectionLabel.text = "1期生"
+            case 1:
+                header.sectionLabel.text = "2期生"
+            case 2:
+                header.sectionLabel.text = "3期生"
+            case 3:
+                header.sectionLabel.text = "卒業生"
+            default:
+                header.sectionLabel.text = ""
+            }
+            
+            return header
+        }
+        
+        return UICollectionReusableView()
+    }
+
 }
 
 extension MemberListViewController: UICollectionViewDelegate {
@@ -97,7 +164,21 @@ extension MemberListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         // 画面遷移
-        let senderData : [String] = [(self.memberList_0[indexPath.row]),(self.memberID_0[indexPath.row] )]
+        var senderData : [String] = []
+        
+        switch indexPath.section {
+        case 0:
+            senderData = [(self.memberList_1[indexPath.row]),(self.memberID_1[indexPath.row] )]
+        case 1:
+            senderData = [(self.memberList_2[indexPath.row]),(self.memberID_2[indexPath.row] )]
+        case 2:
+            senderData = [(self.memberList_3[indexPath.row]),(self.memberID_3[indexPath.row] )]
+        case 3:
+            senderData = [(self.memberList_0[indexPath.row]),(self.memberID_0[indexPath.row] )]
+        default:
+            print("--Not sender data--")
+        }
+        
         // 検索結果へ遷移
         self.performSegue(withIdentifier: "toMemberMusic", sender: senderData)
     }
@@ -171,6 +252,7 @@ extension MemberListViewController {
             
             self.memberList_0 = self.tempMemberList_0
             self.memberID_0 = self.tempMemberID_0
+            
             self.MemberCollectionView.reloadData()
         }
     }

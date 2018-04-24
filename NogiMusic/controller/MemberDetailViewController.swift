@@ -44,7 +44,11 @@ class MemberDetailViewController: UIViewController {
         startObject.musicLibraryPermission()
         startObject.appleMusicConfim()
         
-        loadSongList()
+        if senderData == [] {
+            print("--Can't load SongList--")
+        }else {
+            loadSongList()
+        }
         
         //自作セルをテーブルビューに登録する。
         let testXib = UINib(nibName:"MusicTableViewCell", bundle:nil)
