@@ -28,6 +28,7 @@
 		DF4E9DB22088D94A0081C959 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4E9DAE2088D9490081C959 /* back.png */; };
 		DF4E9DB8208905420081C959 /* UIColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4E9DB7208905420081C959 /* UIColorHex.swift */; };
 		DF4E9DBA20890C7D0081C959 /* BottomPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4E9DB920890C7D0081C959 /* BottomPlayViewController.swift */; };
+		DF4E9DBC2089D02A0081C959 /* downarrow.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4E9DBB2089D02A0081C959 /* downarrow.png */; };
 		DFD7B7CE2084CB440039FCBC /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7B7CD2084CB440039FCBC /* Firebase.swift */; };
 		DFD7B7D12084E3530039FCBC /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7B7CF2084E3530039FCBC /* MusicTableViewCell.swift */; };
 		DFD7B7D22084E3530039FCBC /* MusicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD7B7D02084E3530039FCBC /* MusicTableViewCell.xib */; };
@@ -82,6 +83,7 @@
 		DF4E9DAE2088D9490081C959 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		DF4E9DB7208905420081C959 /* UIColorHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHex.swift; sourceTree = "<group>"; };
 		DF4E9DB920890C7D0081C959 /* BottomPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPlayViewController.swift; sourceTree = "<group>"; };
+		DF4E9DBB2089D02A0081C959 /* downarrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downarrow.png; sourceTree = "<group>"; };
 		DFD7B7CD2084CB440039FCBC /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
 		DFD7B7CF2084E3530039FCBC /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
 		DFD7B7D02084E3530039FCBC /* MusicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicTableViewCell.xib; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 		DF4E9DAA2088D9490081C959 /* play */ = {
 			isa = PBXGroup;
 			children = (
+				DF4E9DBB2089D02A0081C959 /* downarrow.png */,
 				DF4E9DAB2088D9490081C959 /* pause.png */,
 				DF4E9DAC2088D9490081C959 /* next.png */,
 				DF4E9DAD2088D9490081C959 /* play.png */,
@@ -370,6 +373,7 @@
 				DF1BA16920839B9800C222AA /* GoogleService-Info.plist in Resources */,
 				DF4E9DAF2088D94A0081C959 /* pause.png in Resources */,
 				DF1BA13B20838C4A00C222AA /* Assets.xcassets in Resources */,
+				DF4E9DBC2089D02A0081C959 /* downarrow.png in Resources */,
 				DF1BA13920838C4A00C222AA /* Main.storyboard in Resources */,
 				DFD7B7D22084E3530039FCBC /* MusicTableViewCell.xib in Resources */,
 			);

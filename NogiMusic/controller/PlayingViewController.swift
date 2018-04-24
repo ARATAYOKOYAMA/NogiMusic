@@ -11,22 +11,25 @@ import MediaPlayer
 
 class PlayingViewController: UIViewController {
     
+    // ミュージックプレイヤー
     let musicPlayer = MPMusicPlayerController.systemMusicPlayer
     
+    // アートワークやトラック名
     @IBOutlet weak var artwork: UIImageView!
     @IBOutlet weak var trackNameField: UILabel!
     let artworkSize:CGSize = CGSize(width:270, height:270)
     
+    // プレイヤーのUI部品
     @IBOutlet weak var nextButton: UIButton!
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var backBottun: UIButton!
     
+    //　再生と一時停止の画像
     let playButtonImage:UIImage = UIImage(named: "play")!
     let pauseButtonImage:UIImage = UIImage(named: "pause")!
     
+    // 再生と一時停止を判断するフラグ
     var playFlag = 0
-    
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,6 +80,9 @@ class PlayingViewController: UIViewController {
         musicPlayer.endGeneratingPlaybackNotifications()
     }
     
+    /*
+     トラックリストに戻る
+    */
     @IBAction func backTrackList(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
@@ -96,10 +102,16 @@ class PlayingViewController: UIViewController {
         }
     }
 
+    /*
+     次の曲へ
+    */
     @IBAction func nextMusic(_ sender: Any) {
         musicPlayer.skipToNextItem()
     }
     
+    /*
+     前の曲へ
+    */
     @IBAction func previousMusic(_ sender: Any) {
         musicPlayer.skipToPreviousItem()
     }

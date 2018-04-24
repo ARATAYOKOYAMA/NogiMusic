@@ -187,6 +187,13 @@
                                     <constraint firstAttribute="width" secondItem="4YH-EH-9d4" secondAttribute="height" multiplier="375:376" id="s5g-Av-j7W"/>
                                 </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downarrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="dnb-oW-bNU">
+                                <rect key="frame" x="172" y="20" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="PWN-di-WQ9"/>
+                                    <constraint firstAttribute="height" constant="30" id="zie-wp-Mtt"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -194,6 +201,7 @@
                             <constraint firstItem="qZv-8d-0Ek" firstAttribute="centerX" secondItem="cIc-oI-LcI" secondAttribute="centerX" id="3B8-Yq-93s"/>
                             <constraint firstItem="4YH-EH-9d4" firstAttribute="top" secondItem="0bK-2a-IEn" secondAttribute="top" id="5II-FB-cSJ"/>
                             <constraint firstItem="tda-VZ-3lh" firstAttribute="top" secondItem="qZv-8d-0Ek" secondAttribute="bottom" constant="32" id="5It-CF-uIw"/>
+                            <constraint firstItem="dnb-oW-bNU" firstAttribute="centerX" secondItem="cIc-oI-LcI" secondAttribute="centerX" id="Opm-l1-jW9"/>
                             <constraint firstItem="4YH-EH-9d4" firstAttribute="trailing" secondItem="0bK-2a-IEn" secondAttribute="trailing" id="Z1O-fL-ESf"/>
                             <constraint firstItem="tda-VZ-3lh" firstAttribute="centerX" secondItem="cIc-oI-LcI" secondAttribute="centerX" id="Zdu-6d-1Fv"/>
                             <constraint firstItem="0bK-2a-IEn" firstAttribute="bottom" secondItem="WxV-8b-xnV" secondAttribute="bottom" constant="98" id="bjL-X5-61s"/>
@@ -201,6 +209,7 @@
                             <constraint firstItem="tda-VZ-3lh" firstAttribute="leading" secondItem="UNd-Et-oNJ" secondAttribute="trailing" constant="33.5" id="lFk-yV-nRn"/>
                             <constraint firstItem="WxV-8b-xnV" firstAttribute="leading" secondItem="tda-VZ-3lh" secondAttribute="trailing" constant="33.5" id="mhs-84-LGg"/>
                             <constraint firstItem="0bK-2a-IEn" firstAttribute="bottom" secondItem="tda-VZ-3lh" secondAttribute="bottom" constant="98" id="qMb-WT-U7j"/>
+                            <constraint firstItem="dnb-oW-bNU" firstAttribute="top" secondItem="0bK-2a-IEn" secondAttribute="top" id="rxJ-qK-nBw"/>
                             <constraint firstItem="0bK-2a-IEn" firstAttribute="bottom" secondItem="UNd-Et-oNJ" secondAttribute="bottom" constant="98" id="xph-Rc-s9a"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="0bK-2a-IEn"/>
@@ -248,11 +257,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="testChange:" destination="iIk-u6-PHw" eventType="touchUpInside" id="cAP-Io-Loe"/>
+                                    <action selector="toPlayingView:" destination="iIk-u6-PHw" eventType="touchUpInside" id="HUt-Cw-4pG"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="GIC-Eh-SDP"/>
                     </view>
                     <connections>
                         <outlet property="artwork" destination="bU3-Rd-zsk" id="vOy-Ii-7zT"/>
@@ -266,6 +276,7 @@
     </scenes>
     <resources>
         <image name="back.png" width="256" height="148"/>
+        <image name="downarrow.png" width="256" height="256"/>
         <image name="next.png" width="256" height="148"/>
         <image name="pause.png" width="256" height="289"/>
     </resources>

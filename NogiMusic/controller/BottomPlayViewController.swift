@@ -42,6 +42,9 @@ class BottomPlayViewController: UIViewController {
         loadTrackData()
     }
     
+    /*
+     再生中の情報を取得
+    */
     func loadTrackData() {
         if musicPlayer.nowPlayingItem?.title == nil {
             trackName.text = "再生停止中"
@@ -55,9 +58,12 @@ class BottomPlayViewController: UIViewController {
         //artwork.image = musicPlayer.nowPlayingItem?.artwork?.image(at: artworkSize)
     }
 
-    @IBAction func testChange(_ sender: Any) {
+    /*
+     MemberDetailViewController内の関数を利用して，MemberDetailViewControllerからPlayingViewへ遷移
+    */
+    @IBAction func toPlayingView(_ sender: Any) {
         let parentVC = self.parent as! MemberDetailViewController
-        parentVC.testChange()
+        parentVC.toPlayingView()
     }
     
     /*
