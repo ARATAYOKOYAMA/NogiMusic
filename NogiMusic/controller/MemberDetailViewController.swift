@@ -44,7 +44,11 @@ class MemberDetailViewController: UIViewController {
         startObject.musicLibraryPermission()
         startObject.appleMusicConfim()
         
-        loadSongList()
+        if senderData == [] {
+            print("--Can't load SongList--")
+        }else {
+            loadSongList()
+        }
         
         //自作セルをテーブルビューに登録する。
         let testXib = UINib(nibName:"MusicTableViewCell", bundle:nil)
@@ -119,7 +123,7 @@ extension MemberDetailViewController: UITableViewDelegate {
         // 音楽再生
          musicPlay(startTrackID: self.songidList[indexPath.row])
         // 再生画面へ遷移
-        self.performSegue(withIdentifier: "toPlay", sender: nil)
+        toPlayingView()
     }
     
     /*
@@ -204,7 +208,10 @@ extension MemberDetailViewController{
         musicPlayer.play()
     }
     
-    func testChange(){
+    /*
+     PlayingViewへの遷移
+    */
+    func toPlayingView(){
         // 再生画面へ遷移
         self.performSegue(withIdentifier: "toPlay", sender: nil)
     }
