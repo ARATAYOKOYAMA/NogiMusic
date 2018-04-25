@@ -48,9 +48,11 @@ class MemberListViewController: UIViewController {
         // ナビゲーションアイテムの色変更
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
         
-        // セクションヘッダの高さ
         guard let fl = MemberCollectionView?.collectionViewLayout as? UICollectionViewFlowLayout else { return }
+        // セクションヘッダの高さ
         fl.headerReferenceSize = CGSize(width: self.view.bounds.width, height: 30)
+        // セクションヘッダの固定
+        fl.sectionHeadersPinToVisibleBounds = true
         
         // 利用可能かどうかのチェック
         startObject.musicLibraryPermission()
@@ -105,19 +107,14 @@ extension MemberListViewController: UICollectionViewDataSource {
         
         switch indexPath.section {
         case 0:
-            cell.color.text = ""
             cell.name.text = memberList_1[indexPath.item]
         case 1:
-            cell.color.text = ""
             cell.name.text = memberList_2[indexPath.item]
         case 2:
-            cell.color.text = ""
             cell.name.text = memberList_3[indexPath.item]
         case 3:
-            cell.color.text = ""
             cell.name.text = memberList_0[indexPath.item]
         default:
-            cell.color.text = ""
             cell.name.text = ""
         }
         

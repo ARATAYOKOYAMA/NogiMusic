@@ -54,24 +54,28 @@
                                             <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssm-Mr-1e4">
-                                                    <rect key="frame" x="0.0" y="119" width="150" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssm-Mr-1e4">
+                                                    <rect key="frame" x="56.5" y="122" width="37.5" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNq-Af-3B0">
-                                                    <rect key="frame" x="26" y="20" width="99" height="91"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test_artwork.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fry-rl-keT">
+                                                    <rect key="frame" x="24" y="12" width="103" height="103"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="103" id="6Ur-Up-Cop"/>
+                                                        <constraint firstAttribute="width" constant="103" id="Hia-f4-Vmn"/>
+                                                    </constraints>
+                                                </imageView>
                                             </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="ssm-Mr-1e4" firstAttribute="centerX" secondItem="0f3-Jj-tXk" secondAttribute="centerX" id="6rH-Zc-0yl"/>
+                                            <constraint firstItem="Fry-rl-keT" firstAttribute="centerX" secondItem="0f3-Jj-tXk" secondAttribute="centerX" id="7IX-z8-mdQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="ssm-Mr-1e4" secondAttribute="bottom" constant="10" id="GQL-HV-7Fu"/>
+                                            <constraint firstItem="Fry-rl-keT" firstAttribute="top" secondItem="0f3-Jj-tXk" secondAttribute="topMargin" constant="4" id="Nyr-M6-x7U"/>
+                                        </constraints>
                                         <connections>
-                                            <outlet property="color" destination="fNq-Af-3B0" id="7tW-2p-mnQ"/>
                                             <outlet property="name" destination="ssm-Mr-1e4" id="4wq-OQ-8Mx"/>
                                         </connections>
                                     </collectionViewCell>
@@ -303,5 +307,6 @@
         <image name="downarrow.png" width="256" height="256"/>
         <image name="next.png" width="256" height="148"/>
         <image name="pause.png" width="256" height="289"/>
+        <image name="test_artwork.png" width="1042" height="1042"/>
     </resources>
 </document>

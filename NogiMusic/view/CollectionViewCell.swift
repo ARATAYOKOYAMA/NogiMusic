@@ -10,7 +10,6 @@ import UIKit
 
 class CollectionViewCell: UICollectionViewCell {
     
-    @IBOutlet weak var color: UILabel!
     @IBOutlet weak var name: UILabel!
     
 }
