@@ -7,13 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2797E56E91B046608EB0751F /* Pods_NogiMusicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D843621C4B5BF831568B2C4C /* Pods_NogiMusicUITests.framework */; };
+		BEF0A616187A6D4B3116FF8D /* Pods_NogiMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224B9B0A7D0D676D1381FAFF /* Pods_NogiMusic.framework */; };
+		D0E714CA690FC5C9BC8140EB /* Pods_NogiMusicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5ACE35265EA4676D5F8D33B /* Pods_NogiMusicTests.framework */; };
 		DF1BA13420838C4A00C222AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1BA13320838C4A00C222AA /* AppDelegate.swift */; };
-		DF1BA13620838C4A00C222AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1BA13520838C4A00C222AA /* ViewController.swift */; };
+		DF1BA13620838C4A00C222AA /* MemberListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1BA13520838C4A00C222AA /* MemberListViewController.swift */; };
 		DF1BA13920838C4A00C222AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF1BA13720838C4A00C222AA /* Main.storyboard */; };
 		DF1BA13B20838C4A00C222AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF1BA13A20838C4A00C222AA /* Assets.xcassets */; };
 		DF1BA13E20838C4A00C222AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF1BA13C20838C4A00C222AA /* LaunchScreen.storyboard */; };
 		DF1BA14920838C4A00C222AA /* NogiMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1BA14820838C4A00C222AA /* NogiMusicTests.swift */; };
 		DF1BA15420838C4A00C222AA /* NogiMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1BA15320838C4A00C222AA /* NogiMusicUITests.swift */; };
+		DF1BA165208391C400C222AA /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1BA164208391C400C222AA /* CollectionViewCell.swift */; };
+		DF1BA167208392A200C222AA /* MemberDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1BA166208392A200C222AA /* MemberDetailViewController.swift */; };
+		DF1BA16920839B9800C222AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DF1BA16820839B9800C222AA /* GoogleService-Info.plist */; };
+		DF36290B2086570100210418 /* StartFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF36290A2086570100210418 /* StartFunction.swift */; };
+		DF36290D20865BE500210418 /* PlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF36290C20865BE500210418 /* PlayingViewController.swift */; };
+		DF4E9DAF2088D94A0081C959 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4E9DAB2088D9490081C959 /* pause.png */; };
+		DF4E9DB02088D94A0081C959 /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4E9DAC2088D9490081C959 /* next.png */; };
+		DF4E9DB12088D94A0081C959 /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4E9DAD2088D9490081C959 /* play.png */; };
+		DF4E9DB22088D94A0081C959 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4E9DAE2088D9490081C959 /* back.png */; };
+		DF4E9DB8208905420081C959 /* UIColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4E9DB7208905420081C959 /* UIColorHex.swift */; };
+		DF4E9DBA20890C7D0081C959 /* BottomPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF4E9DB920890C7D0081C959 /* BottomPlayViewController.swift */; };
+		DF4E9DBC2089D02A0081C959 /* downarrow.png in Resources */ = {isa = PBXBuildFile; fileRef = DF4E9DBB2089D02A0081C959 /* downarrow.png */; };
+		DF55005F208F888B006F2E0A /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF55005E208F888B006F2E0A /* SectionHeader.swift */; };
+		DF5500622090EFED006F2E0A /* test_artwork.png in Resources */ = {isa = PBXBuildFile; fileRef = DF5500612090EFED006F2E0A /* test_artwork.png */; };
+		DFD7B7CE2084CB440039FCBC /* Firebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7B7CD2084CB440039FCBC /* Firebase.swift */; };
+		DFD7B7D12084E3530039FCBC /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD7B7CF2084E3530039FCBC /* MusicTableViewCell.swift */; };
+		DFD7B7D22084E3530039FCBC /* MusicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD7B7D02084E3530039FCBC /* MusicTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +54,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		152310E0E78BC4989E81EEEC /* Pods-NogiMusicUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NogiMusicUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NogiMusicUITests/Pods-NogiMusicUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1A534D004177A7146C9672C4 /* Pods-NogiMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NogiMusic.release.xcconfig"; path = "Pods/Target Support Files/Pods-NogiMusic/Pods-NogiMusic.release.xcconfig"; sourceTree = "<group>"; };
+		224B9B0A7D0D676D1381FAFF /* Pods_NogiMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NogiMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90E54D348ACF7105F5175427 /* Pods-NogiMusicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NogiMusicTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NogiMusicTests/Pods-NogiMusicTests.release.xcconfig"; sourceTree = "<group>"; };
+		920E5FE91E4CCA65679CA293 /* Pods-NogiMusicUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NogiMusicUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NogiMusicUITests/Pods-NogiMusicUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D19C7D1D2E7B7068A46411A4 /* Pods-NogiMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NogiMusic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NogiMusic/Pods-NogiMusic.debug.xcconfig"; sourceTree = "<group>"; };
+		D843621C4B5BF831568B2C4C /* Pods_NogiMusicUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NogiMusicUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF1BA13020838C4A00C222AA /* NogiMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NogiMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF1BA13320838C4A00C222AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DF1BA13520838C4A00C222AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DF1BA13520838C4A00C222AA /* MemberListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListViewController.swift; sourceTree = "<group>"; };
 		DF1BA13820838C4A00C222AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DF1BA13A20838C4A00C222AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF1BA13D20838C4A00C222AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +74,25 @@
 		DF1BA14F20838C4A00C222AA /* NogiMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NogiMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF1BA15320838C4A00C222AA /* NogiMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NogiMusicUITests.swift; sourceTree = "<group>"; };
 		DF1BA15520838C4A00C222AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF1BA164208391C400C222AA /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		DF1BA166208392A200C222AA /* MemberDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberDetailViewController.swift; sourceTree = "<group>"; };
+		DF1BA16820839B9800C222AA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DF36290A2086570100210418 /* StartFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartFunction.swift; sourceTree = "<group>"; };
+		DF36290C20865BE500210418 /* PlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingViewController.swift; sourceTree = "<group>"; };
+		DF4E9DAB2088D9490081C959 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause.png; sourceTree = "<group>"; };
+		DF4E9DAC2088D9490081C959 /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next.png; sourceTree = "<group>"; };
+		DF4E9DAD2088D9490081C959 /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play.png; sourceTree = "<group>"; };
+		DF4E9DAE2088D9490081C959 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		DF4E9DB7208905420081C959 /* UIColorHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHex.swift; sourceTree = "<group>"; };
+		DF4E9DB920890C7D0081C959 /* BottomPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPlayViewController.swift; sourceTree = "<group>"; };
+		DF4E9DBB2089D02A0081C959 /* downarrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downarrow.png; sourceTree = "<group>"; };
+		DF55005E208F888B006F2E0A /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		DF5500612090EFED006F2E0A /* test_artwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_artwork.png; sourceTree = "<group>"; };
+		DFD7B7CD2084CB440039FCBC /* Firebase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase.swift; sourceTree = "<group>"; };
+		DFD7B7CF2084E3530039FCBC /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		DFD7B7D02084E3530039FCBC /* MusicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicTableViewCell.xib; sourceTree = "<group>"; };
+		F5ACE35265EA4676D5F8D33B /* Pods_NogiMusicTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NogiMusicTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC969A3D1720DB88B25E6F40 /* Pods-NogiMusicTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NogiMusicTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NogiMusicTests/Pods-NogiMusicTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEF0A616187A6D4B3116FF8D /* Pods_NogiMusic.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0E714CA690FC5C9BC8140EB /* Pods_NogiMusicTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +116,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2797E56E91B046608EB0751F /* Pods_NogiMusicUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D613869CA2CAA9E9AA2D34CE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D19C7D1D2E7B7068A46411A4 /* Pods-NogiMusic.debug.xcconfig */,
+				1A534D004177A7146C9672C4 /* Pods-NogiMusic.release.xcconfig */,
+				FC969A3D1720DB88B25E6F40 /* Pods-NogiMusicTests.debug.xcconfig */,
+				90E54D348ACF7105F5175427 /* Pods-NogiMusicTests.release.xcconfig */,
+				920E5FE91E4CCA65679CA293 /* Pods-NogiMusicUITests.debug.xcconfig */,
+				152310E0E78BC4989E81EEEC /* Pods-NogiMusicUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB96ECCC96F22ADA600F04F0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				224B9B0A7D0D676D1381FAFF /* Pods_NogiMusic.framework */,
+				F5ACE35265EA4676D5F8D33B /* Pods_NogiMusicTests.framework */,
+				D843621C4B5BF831568B2C4C /* Pods_NogiMusicUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DF1BA12720838C4A00C222AA = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +153,8 @@
 				DF1BA14720838C4A00C222AA /* NogiMusicTests */,
 				DF1BA15220838C4A00C222AA /* NogiMusicUITests */,
 				DF1BA13120838C4A00C222AA /* Products */,
+				D613869CA2CAA9E9AA2D34CE /* Pods */,
+				DB96ECCC96F22ADA600F04F0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +171,16 @@
 		DF1BA13220838C4A00C222AA /* NogiMusic */ = {
 			isa = PBXGroup;
 			children = (
+				DF4E9DA92088D5190081C959 /* images */,
+				DF1BA1632083916500C222AA /* view */,
+				DF1BA1622083914B00C222AA /* model */,
+				DF1BA1612083913200C222AA /* controller */,
 				DF1BA13320838C4A00C222AA /* AppDelegate.swift */,
-				DF1BA13520838C4A00C222AA /* ViewController.swift */,
 				DF1BA13720838C4A00C222AA /* Main.storyboard */,
 				DF1BA13A20838C4A00C222AA /* Assets.xcassets */,
 				DF1BA13C20838C4A00C222AA /* LaunchScreen.storyboard */,
 				DF1BA13F20838C4A00C222AA /* Info.plist */,
+				DF1BA16820839B9800C222AA /* GoogleService-Info.plist */,
 			);
 			path = NogiMusic;
 			sourceTree = "<group>";
@@ -125,6 +203,67 @@
 			path = NogiMusicUITests;
 			sourceTree = "<group>";
 		};
+		DF1BA1612083913200C222AA /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				DF1BA13520838C4A00C222AA /* MemberListViewController.swift */,
+				DF1BA166208392A200C222AA /* MemberDetailViewController.swift */,
+				DF36290C20865BE500210418 /* PlayingViewController.swift */,
+				DF4E9DB920890C7D0081C959 /* BottomPlayViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		DF1BA1622083914B00C222AA /* model */ = {
+			isa = PBXGroup;
+			children = (
+				DFD7B7CD2084CB440039FCBC /* Firebase.swift */,
+				DF36290A2086570100210418 /* StartFunction.swift */,
+				DF4E9DB7208905420081C959 /* UIColorHex.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		DF1BA1632083916500C222AA /* view */ = {
+			isa = PBXGroup;
+			children = (
+				DF1BA164208391C400C222AA /* CollectionViewCell.swift */,
+				DFD7B7CF2084E3530039FCBC /* MusicTableViewCell.swift */,
+				DFD7B7D02084E3530039FCBC /* MusicTableViewCell.xib */,
+				DF55005E208F888B006F2E0A /* SectionHeader.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		DF4E9DA92088D5190081C959 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				DF5500602090EFED006F2E0A /* artwork */,
+				DF4E9DAA2088D9490081C959 /* play */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		DF4E9DAA2088D9490081C959 /* play */ = {
+			isa = PBXGroup;
+			children = (
+				DF4E9DBB2089D02A0081C959 /* downarrow.png */,
+				DF4E9DAB2088D9490081C959 /* pause.png */,
+				DF4E9DAC2088D9490081C959 /* next.png */,
+				DF4E9DAD2088D9490081C959 /* play.png */,
+				DF4E9DAE2088D9490081C959 /* back.png */,
+			);
+			path = play;
+			sourceTree = "<group>";
+		};
+		DF5500602090EFED006F2E0A /* artwork */ = {
+			isa = PBXGroup;
+			children = (
+				DF5500612090EFED006F2E0A /* test_artwork.png */,
+			);
+			path = artwork;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +271,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF1BA15820838C4A00C222AA /* Build configuration list for PBXNativeTarget "NogiMusic" */;
 			buildPhases = (
+				7A50D0F31AF855FF43A366CE /* [CP] Check Pods Manifest.lock */,
 				DF1BA12C20838C4A00C222AA /* Sources */,
 				DF1BA12D20838C4A00C222AA /* Frameworks */,
 				DF1BA12E20838C4A00C222AA /* Resources */,
+				BB0440F670C49DF5A925B88D /* [CP] Embed Pods Frameworks */,
+				389B7AB8F748146C064B0DE7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +291,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF1BA15B20838C4A00C222AA /* Build configuration list for PBXNativeTarget "NogiMusicTests" */;
 			buildPhases = (
+				082E3C23C82805D69A459E7B /* [CP] Check Pods Manifest.lock */,
 				DF1BA14020838C4A00C222AA /* Sources */,
 				DF1BA14120838C4A00C222AA /* Frameworks */,
 				DF1BA14220838C4A00C222AA /* Resources */,
+				082A1C4982461D5C62498515 /* [CP] Embed Pods Frameworks */,
+				1E769BA41BB0CF334B6B3741 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +312,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DF1BA15E20838C4A00C222AA /* Build configuration list for PBXNativeTarget "NogiMusicUITests" */;
 			buildPhases = (
+				4FE07269CA9B03BBE933EC60 /* [CP] Check Pods Manifest.lock */,
 				DF1BA14B20838C4A00C222AA /* Sources */,
 				DF1BA14C20838C4A00C222AA /* Frameworks */,
 				DF1BA14D20838C4A00C222AA /* Resources */,
+				6076EC345AF89514E5FC3C4D /* [CP] Embed Pods Frameworks */,
+				07799DD8594B7F61217EB180 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -232,9 +380,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF4E9DB02088D94A0081C959 /* next.png in Resources */,
+				DF4E9DB12088D94A0081C959 /* play.png in Resources */,
+				DF4E9DB22088D94A0081C959 /* back.png in Resources */,
 				DF1BA13E20838C4A00C222AA /* LaunchScreen.storyboard in Resources */,
+				DF1BA16920839B9800C222AA /* GoogleService-Info.plist in Resources */,
+				DF4E9DAF2088D94A0081C959 /* pause.png in Resources */,
 				DF1BA13B20838C4A00C222AA /* Assets.xcassets in Resources */,
+				DF5500622090EFED006F2E0A /* test_artwork.png in Resources */,
+				DF4E9DBC2089D02A0081C959 /* downarrow.png in Resources */,
 				DF1BA13920838C4A00C222AA /* Main.storyboard in Resources */,
+				DFD7B7D22084E3530039FCBC /* MusicTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,13 +410,160 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		07799DD8594B7F61217EB180 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NogiMusicUITests/Pods-NogiMusicUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		082A1C4982461D5C62498515 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NogiMusicTests/Pods-NogiMusicTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		082E3C23C82805D69A459E7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1E769BA41BB0CF334B6B3741 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NogiMusicTests/Pods-NogiMusicTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		389B7AB8F748146C064B0DE7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NogiMusic/Pods-NogiMusic-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FE07269CA9B03BBE933EC60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6076EC345AF89514E5FC3C4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NogiMusicUITests/Pods-NogiMusicUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A50D0F31AF855FF43A366CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BB0440F670C49DF5A925B88D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NogiMusic/Pods-NogiMusic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DF1BA12C20838C4A00C222AA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF1BA13620838C4A00C222AA /* ViewController.swift in Sources */,
+				DF4E9DB8208905420081C959 /* UIColorHex.swift in Sources */,
+				DFD7B7CE2084CB440039FCBC /* Firebase.swift in Sources */,
+				DF1BA167208392A200C222AA /* MemberDetailViewController.swift in Sources */,
+				DF1BA13620838C4A00C222AA /* MemberListViewController.swift in Sources */,
 				DF1BA13420838C4A00C222AA /* AppDelegate.swift in Sources */,
+				DF36290D20865BE500210418 /* PlayingViewController.swift in Sources */,
+				DF1BA165208391C400C222AA /* CollectionViewCell.swift in Sources */,
+				DF36290B2086570100210418 /* StartFunction.swift in Sources */,
+				DF55005F208F888B006F2E0A /* SectionHeader.swift in Sources */,
+				DFD7B7D12084E3530039FCBC /* MusicTableViewCell.swift in Sources */,
+				DF4E9DBA20890C7D0081C959 /* BottomPlayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +727,7 @@
 		};
 		DF1BA15920838C4A00C222AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D19C7D1D2E7B7068A46411A4 /* Pods-NogiMusic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +743,7 @@
 		};
 		DF1BA15A20838C4A00C222AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A534D004177A7146C9672C4 /* Pods-NogiMusic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +759,7 @@
 		};
 		DF1BA15C20838C4A00C222AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC969A3D1720DB88B25E6F40 /* Pods-NogiMusicTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +777,7 @@
 		};
 		DF1BA15D20838C4A00C222AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90E54D348ACF7105F5175427 /* Pods-NogiMusicTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +795,7 @@
 		};
 		DF1BA15F20838C4A00C222AA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 920E5FE91E4CCA65679CA293 /* Pods-NogiMusicUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +812,7 @@
 		};
 		DF1BA16020838C4A00C222AA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 152310E0E78BC4989E81EEEC /* Pods-NogiMusicUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,6 @@
+framework module Pods_NogiMusic {
+  umbrella header "Pods-NogiMusic-umbrella.h"
+
+  export *
+  module * { export * }
+}
